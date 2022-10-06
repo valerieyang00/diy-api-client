@@ -18,7 +18,6 @@ export default function NewExpense () {
             e.preventDefault()
             //post form data to the backend API
             const response = await axios.post(`${process.env.REACT_APP_SERVER_URL}/expenses`, form)
-            //navigate back to /bounties to see the new bounty
             navigate('/expenses')
 
         } catch(err) {

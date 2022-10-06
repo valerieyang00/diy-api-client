@@ -37,7 +37,7 @@ export default function EditExpense () {
             e.preventDefault()
             // axios.put and axios.post work same way ('url', req.body)
             const response = await axios.put(`${process.env.REACT_APP_SERVER_URL}/expenses/${id}`, form)
-            // navigate back to the details page for this bounty
+            // navigate back to the details page for this expense
             navigate(`/expenses/${id}`)
 
         }catch(err) {
