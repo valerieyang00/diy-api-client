@@ -21,8 +21,9 @@ function App() {
           <Route path='/expenses/new' element={<NewExpense />} />
           <Route path='/expenses/:id' element={<Expense />} />
           <Route path='/expenses/:id/edit' element={<EditExpense />} />
-          <Route path='/categories' element={<Categories />} />
-          <Route path='/categories/:id' element={<Category />} />
+          {/* bonus not completed */}
+          {/* <Route path='/categories' element={<Categories />} />
+          <Route path='/categories/:id' element={<Category />} /> */}
 
         </Routes>
       </Router>
